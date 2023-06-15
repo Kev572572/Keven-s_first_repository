@@ -279,7 +279,7 @@ countries %>%
   mutate(country_name = factor(country_name, levels = country_name[order(safe_after_dark_female[complete.cases(safe_after_dark_female)])])) %>%
   ggplot() +
   geom_segment( aes(y = country_name, yend = country_name,
-                    x = safe_after_dark_female, xend = safe_after_dark_male), color="grey") +
+                    x = safe_after_dark_female, xend = safe_after_dark_male), color="orange") +
   geom_point( aes(y = country_name, x = safe_after_dark_female), color = "#22A699", size=3 ) +
   geom_point( aes(y = country_name, x = safe_after_dark_male), color = "#F29727", size=3 ) +
   xlab("Proportion of people") +
